@@ -1,4 +1,6 @@
 import "./App.css";
+import Counter from "./Counter";
+import UseState from "./UseState";
 
 function App() {
   function handleClick() {
@@ -19,7 +21,9 @@ function App() {
   };
   return (
     <>
+      <UseState></UseState>
       <h1>Vite + React</h1>
+      <Counter></Counter>
       {/* amra java script a ai vabe event handlar diye kaj kori */}
       {/* <button onClick="handleClick()">Click Me</button> */}
 
