@@ -8,11 +8,16 @@ import UseState from "./UseState";
 import "./UseState.css";
 import Friends from "./Friends";
 import Data from "./Data";
+import Posts from "./Posts";
 // const fetchUser = fetch("https://jsonplaceholder.typicode.com/users").then(
 //   (res) => res.json()
 // );
 
-const fetchData = fetch("https://jsonplaceholder.typicode.com/users").then(
+// const fetchData = fetch("https://jsonplaceholder.typicode.com/users").then(
+//   (res) => res.json()
+// );
+
+const postData = fetch("https://jsonplaceholder.typicode.com/posts").then(
   (res) => res.json()
 );
 function App() {
@@ -34,9 +39,12 @@ function App() {
   // };
   return (
     <>
-      <Suspense fallback={<h2>lodding ...........</h2>}>
-        <Data fetchData={fetchData}></Data>
+      <Suspense fallback={<h3>Loading ... ! </h3>}>
+        <Posts key={postData.id} postData={postData}></Posts>
       </Suspense>
+      {/* <Suspense fallback={<h2>lodding ...........</h2>}>
+        <Data fetchData={fetchData}></Data>
+      </Suspense> */}
       {/* <Friends></Friends> */}
       {/* <Suspense fallback={<h3>Loading ...</h3>}>
         <Users fetchUser={fetchUser}></Users>

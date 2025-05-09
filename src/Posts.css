@@ -1,0 +1,14 @@
+.posts {
+    border: 2px solid blueviolet;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 600px;
+}
+
+.child{
+    border: 1px solid tomato;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 7px;
+}
