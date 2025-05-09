@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import "./App.css";
 import Batsman from "./Batsman";
 import Counter from "./Counter";
@@ -5,6 +6,15 @@ import Player from "./Player";
 import Users from "./Users";
 import UseState from "./UseState";
 import "./UseState.css";
+import Friends from "./Friends";
+import Data from "./Data";
+// const fetchUser = fetch("https://jsonplaceholder.typicode.com/users").then(
+//   (res) => res.json()
+// );
+
+const fetchData = fetch("https://jsonplaceholder.typicode.com/users").then(
+  (res) => res.json()
+);
 function App() {
   // function handleClick() {
   //   alert("I am Clicked");
@@ -24,8 +34,14 @@ function App() {
   // };
   return (
     <>
-      <Users></Users>
-      <Player></Player>
+      <Suspense fallback={<h2>lodding ...........</h2>}>
+        <Data fetchData={fetchData}></Data>
+      </Suspense>
+      {/* <Friends></Friends> */}
+      {/* <Suspense fallback={<h3>Loading ...</h3>}>
+        <Users fetchUser={fetchUser}></Users>
+      </Suspense> */}
+      {/* <Player></Player> */}
       {/* <Batsman></Batsman> */}
       {/* <UseState></UseState>
       <h1>Vite + React</h1>
