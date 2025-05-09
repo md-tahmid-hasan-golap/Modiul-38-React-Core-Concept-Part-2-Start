@@ -24,7 +24,9 @@ const Player = () => {
         <strong>Total Score</strong> : {runs}
       </p>
       <p>Totle Six : {six}</p>
+      {six >= 5 && <p>Just wow --- congrats</p>}
       {runs >= 50 && <p>congratulation : Half sentury</p>}
+
       <button onClick={singlaRun}>Single</button>
       <button onClick={fourRuns}>Fure</button>
       <button onClick={sixRuns}>Six</button>
