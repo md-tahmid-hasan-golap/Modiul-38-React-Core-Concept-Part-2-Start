@@ -1,7 +1,8 @@
 import "./App.css";
+import Batsman from "./Batsman";
 import Counter from "./Counter";
 import UseState from "./UseState";
-
+import "./UseState.css";
 function App() {
   function handleClick() {
     alert("I am Clicked");
@@ -21,6 +22,7 @@ function App() {
   };
   return (
     <>
+      <Batsman></Batsman>
       <UseState></UseState>
       <h1>Vite + React</h1>
       <Counter></Counter>
