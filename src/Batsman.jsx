@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Batsman = () => {
-  const [runs, setRuns] = useState([0]);
+  const [runs, setRuns] = useState(0);
   const handleSignal = () => {
     const updateteRun = runs + 1;
     setRuns(updateteRun);
@@ -15,6 +15,7 @@ const Batsman = () => {
     const updateteRun = runs + 6;
     setRuns(updateteRun);
   };
+
   return (
     <div>
       <h2>player : Bangla Batsman</h2>

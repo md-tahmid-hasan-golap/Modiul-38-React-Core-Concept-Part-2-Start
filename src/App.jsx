@@ -1,35 +1,37 @@
 import "./App.css";
 import Batsman from "./Batsman";
 import Counter from "./Counter";
+import Player from "./Player";
 import UseState from "./UseState";
 import "./UseState.css";
 function App() {
-  function handleClick() {
-    alert("I am Clicked");
-  }
+  // function handleClick() {
+  //   alert("I am Clicked");
+  // }
 
-  function clickedButton() {
-    alert("Click the button");
-  }
+  // function clickedButton() {
+  //   alert("Click the button");
+  // }
 
-  const arrowFunction = () => {
-    alert("Arrow function");
-  };
+  // const arrowFunction = () => {
+  //   alert("Arrow function");
+  // };
 
-  const arrowFunction2 = (num) => {
-    const newNum = num + 5;
-    alert(newNum);
-  };
+  // const arrowFunction2 = (num) => {
+  //   const newNum = num + 5;
+  //   alert(newNum);
+  // };
   return (
     <>
-      <Batsman></Batsman>
-      <UseState></UseState>
+      <Player></Player>
+      {/* <Batsman></Batsman> */}
+      {/* <UseState></UseState>
       <h1>Vite + React</h1>
-      <Counter></Counter>
+      <Counter></Counter> */}
       {/* amra java script a ai vabe event handlar diye kaj kori */}
       {/* <button onClick="handleClick()">Click Me</button> */}
 
-      <button
+      {/* <button
         style={{
           marginBottom: "10px",
         }}
@@ -51,7 +53,7 @@ function App() {
         Golap
       </button>
       <br />
-      <button onClick={() => arrowFunction2(5)}>Count</button>
+      <button onClick={() => arrowFunction2(5)}>Count</button> */}
     </>
   );
 }
