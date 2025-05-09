@@ -3,3 +3,14 @@ button{
     color: white;
     border: none;
 }
+div{
+    color: blueviolet;
+}
+.main {
+    border: 2px solid blueviolet;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+    
+}

@@ -18,7 +18,7 @@ const Player = () => {
     setRuns(updateRun);
   };
   return (
-    <div>
+    <div className="main">
       <h2>Bangladeshi Batsman</h2>
       <p>
         <strong>Total Score</strong> : {runs}

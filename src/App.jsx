@@ -2,6 +2,7 @@ import "./App.css";
 import Batsman from "./Batsman";
 import Counter from "./Counter";
 import Player from "./Player";
+import Users from "./Users";
 import UseState from "./UseState";
 import "./UseState.css";
 function App() {
@@ -23,6 +24,7 @@ function App() {
   // };
   return (
     <>
+      <Users></Users>
       <Player></Player>
       {/* <Batsman></Batsman> */}
       {/* <UseState></UseState>
